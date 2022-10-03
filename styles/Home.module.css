@@ -57,3 +57,42 @@
   border: 0;
   font-family: "Roboto", sans-serif;
 }
+
+.transactionList {
+  border: 1px solid #fff;
+  padding: 0;
+  margin: 10px;
+  height: 300px;
+  width: 100%;
+  overflow-y: scroll;
+  
+}
+
+.transactionList::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.transactionList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.transactionList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.transactionList > h3 {
+  padding: 0 10px;
+}
+.transactionList > div {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  margin: 10px 0;
+}
+.transactionList > div:last-child {
+  margin: 0;
+}

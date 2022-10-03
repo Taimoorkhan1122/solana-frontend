@@ -4,6 +4,7 @@ import { AppBar } from "../components/AppBar";
 import Head from "next/head";
 import { PingButton } from "../components/PingButton";
 import WalletContextProvider from "../components/WalletContextProvider";
+import { SendSolForm } from "../components/SendSolForm";
 
 const Home: NextPage = (props) => {
     return (
@@ -15,7 +16,7 @@ const Home: NextPage = (props) => {
             <WalletContextProvider>
                 <AppBar />
                 <div className={styles.AppBody}>
-                    <PingButton />
+                    <SendSolForm />
                 </div>
             </WalletContextProvider>
         </div>
